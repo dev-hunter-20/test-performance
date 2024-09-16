@@ -1,0 +1,104 @@
+.detail-app-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  min-height: 200px;
+  transition: height 0.3s ease, min-height 0.3s ease;
+  background-color: rgb(255, 255, 255);
+  &.sticky {
+    height: 100px;
+    min-height: 100px;
+  }
+  .no-content {
+    display: flex;
+    .ant-skeleton-element {
+      margin-right: 20px;
+      margin-top: -5px;
+    }
+    .ant-skeleton-paragraph {
+      width: 500px;
+    }
+  }
+  .detail-app-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    .detail-app-image {
+      &.sticky {
+        width: 70px;
+        height: 70px;
+      }
+    }
+    .title-app {
+      .name-app {
+        display: flex;
+        height: 45px;
+        img {
+          margin-left: 3px;
+        }
+        span {
+          font-size: 2em;
+          margin-top: 0;
+          margin-bottom: 0.5em;
+          font-weight: 500;
+        }
+      }
+      .review-isbuild {
+        display: flex;
+        align-items: center;
+        &.sticky {
+          display: none;
+        }
+        .built4-shopify {
+          background-color: rgb(224, 240, 255);
+          width: 125px;
+          height: 25px;
+          border-radius: 8px;
+          font-size: 12px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .diamond-icon {
+            margin: 0 5px 0 0;
+            width: 15px;
+            height: 15px;
+          }
+          span {
+            padding-top: 3px;
+          }
+        }
+        .rating {
+          margin-left: 5px;
+          .optimize-icon {
+            font-size: 20px;
+            margin-left: 5px;
+            color: #1a90ff;
+          }
+          .star {
+            color: #d8aa34;
+          }
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+      .tagline {
+        &.sticky {
+          display: none;
+        }
+      }
+      .by {
+        &.sticky {
+          display: none;
+        }
+      }
+    }
+  }
+  .add-compare {
+    display: flex;
+    .button-compare-app {
+      margin-left: 10px;
+    }
+  }
+}

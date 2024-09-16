@@ -1,0 +1,26 @@
+.sitemap {
+  .category-name {
+    font-size: 19px;
+    line-height: 28px;
+  }
+  .collection-name {
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 30px;
+  }
+  .header-category {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0 0;
+  }
+  @media (max-width: 992px) {
+    .list-item-categories {
+      line-height: 35px;
+    }
+    .collection-name {
+      line-height: 35px;
+    }
+  }
+}

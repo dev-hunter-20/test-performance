@@ -1,0 +1,26 @@
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  flex-direction: column;
+  .ant-result-title {
+    font-size: 55px;
+    color: #cc9d24;
+    font-weight: bold;
+  }
+  .ant-result-subtitle {
+    font-size: 20px;
+  }
+  .ant-btn {
+    border-color: #cc9d24 !important;
+    background: #cc9d24 !important;
+    color: #ffffff !important;
+    &:hover {
+      border-color: #d1af58 !important;
+      background: #d1af58 !important;
+      color: #ffffff !important;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.overview {
+  &-title {
+    font-size: 24px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(45deg, #ff4e50, #f9ae23);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+  }
+  &-desc {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &-app-dashboard {
+    ul li:last-child {
+      text-decoration: none;
+      list-style: none;
+    }
+    li {
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+  .Carousels {
+    max-width: 584px;
+    width: 100%;
+
+    .slick-next,
+    .slick-prev {
+      top: unset;
+      bottom: 0;
+      transform: none;
+      transform: translateY(100%);
+      z-index: 2;
+    }
+
+    .slick-prev {
+      left: 25%;
+    }
+
+    .slick-next {
+      right: 25%;
+    }
+
+    .slick-dots {
+      li {
+        &:hover,
+        &.slick-active {
+          button {
+            opacity: 1;
+            transform: scale(1.1);
+          }
+        }
+
+        button {
+          cursor: pointer;
+          width: 12px;
+          height: 12px;
+          background: #ffc225;
+          opacity: 0.5;
+          border-radius: 50%;
+          transition: all 0.3s ease;
+
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &-carousel-item {
+    text-align: center;
+    &-image {
+      .img {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 6px;
+        border: 1px solid #e2e2e2;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      .ant-image-mask:hover {
+        opacity: 0 !important;
+      }
+    }
+  }
+}

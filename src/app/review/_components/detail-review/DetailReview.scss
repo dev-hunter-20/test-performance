@@ -1,0 +1,37 @@
+.wrapper-detail-review {
+  margin-top: 30px;
+  h1 {
+    margin-bottom: 20px;
+    min-height: 33px;
+  }
+  .check-log-review-dashboard {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+}
+.loading_components {
+  display: flex;
+  justify-content: center;
+  height: 694px;
+  position: relative;
+  .ant-spin-spinning {
+    position: absolute;
+    top: 50%;
+  }
+}
+
+.detail-developers-header {
+  padding: 10px 0;
+  background: #0b1d46;
+  font-size: 18px;
+  .ant-breadcrumb-separator,
+  a {
+    color: #ffffff;
+    &:hover {
+      color: #ffc225;
+    }
+  }
+  .ant-breadcrumb-link {
+    color: #ffffff;
+  }
+}
